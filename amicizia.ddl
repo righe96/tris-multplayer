@@ -1,0 +1,7 @@
+CREATE TABLE Amicizia(
+	ID_Utente1 INTEGER NOT NULL,
+	ID_Utente2 INTEGER NOT NULL,
+	PRIMARY KEY(ID_Utente1,ID_Utente2),
+	FOREIGN KEY (ID_Utente1) REFERENCES Utenti(ID_Utente),
+	FOREIGN KEY (ID_Utente2) REFERENCES Utenti(ID_Utente)
+);
